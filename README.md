@@ -4,7 +4,8 @@
 
 > In object-oriented programming languages, a Mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes. How those other classes gain access to the mixin's methods depends on the language. Mixins are sometimes described as being "included" rather than "inherited".
 
--   https://en.wikipedia.org/wiki/Mixin
+-   [Wikipedia Article](https://en.wikipedia.org/wiki/Mixin)
+-   [Trait Linearization in Scala](https://www.trivento.io/trait-linearization/)
 
 ### The TypeScript Handbook Pattern.
 
@@ -97,9 +98,9 @@ setTimeout(() => smartObj.interact(), 1000)
 -   Pros
 
     -   Avoid duplication.
-    -   Allows splitting up large classes to multiple files if/when composition is not appropriate.
-        -   a.k.a "partial classes".
-
+    -   Allows splitting up large classes to multiple files if/when class composition is not appropriate.
+        -   a.k.a ["partial classes"](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+        
 -   Cons
     -   Breaks the semantics of TypeScript a bit, What the compiler knows about "SmartObject"
         is no longer the "full story", that is why the factory is needed to create new instances.

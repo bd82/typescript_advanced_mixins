@@ -60,6 +60,7 @@ class Activatable {
         this.isActive = true
     }
 
+    // Specify the type of "this"
     deactivate(this: SmartObjectMixed) {
         this.isActive = false
         // accessing method from another mixin

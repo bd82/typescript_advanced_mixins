@@ -1,16 +1,16 @@
 ## Advanced mixed-ins in TypeScript.
 
-### What Are Mix-Ins
+### What Are Mix-Ins?
 
 > In object-oriented programming languages, a Mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes. How those other classes gain access to the mixin's methods depends on the language. Mixins are sometimes described as being "included" rather than "inherited".
 
 -   https://en.wikipedia.org/wiki/Mixin
 
-### The official recommended TypeScript pattern.
+### The TypeScript Handbook Pattern.
 
 -   https://www.typescriptlang.org/docs/handbook/mixins.html
 
-### Issues with the recommended TypeScript pattern.
+### Issues With The TypeScript Handbook Pattern.
 
 -   Duplicate declarations of the instance methods.
 -   Missing scenario of interaction between different mixins included in the same class.
@@ -19,7 +19,7 @@
     -   As instance fields are copied to the constructor by the TypeScript compiler
         and only one constructor would get invoked.
 
-### A different TypeScript pattern.
+### An Alternative TypeScript Pattern.
 
 The building blocks are as follows:
 
